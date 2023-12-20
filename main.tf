@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region = var.region
   default_tags {
     tags = {
       Env     = "dev"
